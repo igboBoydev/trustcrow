@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "ES2016",
         "module": "commonjs",
-        "outDir": "/dist",
+        "outDir": "./dist",
         "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
@@ -11,6 +11,7 @@
         "pretty": true,
         "strict": true,
         "baseUrl": "./src",
+        "types": ["node", "jest"],
         "noUnusedLocals": true,
         "typeRoots": ["./node_modules/@types", "./src/types"]
         //"types": ["mocha", "node"]

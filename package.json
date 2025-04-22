@@ -11,7 +11,7 @@
     "seed": "npx sequelize db:seed:all",
     "dev": "nodemon --exec ts-node index.ts",
     "watch": "nodemon",
-    "build": "tsc",
+    "build": "tsc && node ./dist/index.js",
     "test": "jest",
     "git deploy": "npm run git add . && npm run git commit -am \"update\" && git push"
   },
@@ -29,6 +29,7 @@
     "@types/express": "^5.0.1",
     "@types/express-session": "^1.18.1",
     "@types/helmet": "^0.0.48",
+    "@types/jest": "^29.5.14",
     "@types/joi": "^17.2.2",
     "@types/mocha": "^10.0.10",
     "@types/morgan": "^1.9.9",
@@ -61,8 +62,8 @@
     "winston": "^3.17.0"
   },
   "jest": {
-  "transform": {
-    "^.+\\.(ts|tsx)$": "babel-jest"
+    "transform": {
+      "^.+\\.(ts|tsx)$": "babel-jest"
+    }
   }
-}
 }
