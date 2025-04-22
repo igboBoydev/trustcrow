@@ -1,0 +1,7 @@
+/node_modules
+.env
+package-lock.json
+Notepad.txt
+app.log
+todo.txt
+/src/config/uploads
