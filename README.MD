@@ -1,6 +1,7 @@
 # H1 - How to start the application
    * Clone The application.
    * cd into the application folder.
+   * copy the data from .env.example to your .env file
    * run `npm install`.
    * after installing the dependencies run `npm run db:create`: This command helps create the postgreSQL database in your already running postgreSQL database server.
    * after creating the database run `npm run migrate`: This command helps migrate the categories table schema to your database.
